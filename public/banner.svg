@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#070a12;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a1525;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#070a12;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#10b981" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#10b981" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#10b981" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#10b981" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#10b981" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#10b981" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#10b981" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#10b981" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#10b981" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#10b981" stroke-width="1"/>
+  </g>
+  
+  <!-- Glow effects -->
+  <circle cx="600" cy="280" r="200" fill="#10b981" opacity="0.08"/>
+  <circle cx="900" cy="450" r="150" fill="#3b82f6" opacity="0.06"/>
+  
+  <!-- Logo circle -->
+  <circle cx="120" cy="120" r="50" fill="none" stroke="#10b981" stroke-width="2" opacity="0.3"/>
+  <line x1="120" y1="80" x2="120" y2="160" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Title -->
+  <text x="600" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="middle">FlashRead</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#10b981" text-anchor="middle">SpeedReader — Read faster with RSVP</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="315" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">No eye movement needed • 300-1200+ WPM</text>
+  
+  <!-- Word Display Demo -->
+  <g transform="translate(600, 400)">
+    <!-- Center line -->
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#10b981" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Word parts -->
+    <text x="-80" y="10" font-family="monospace" font-size="42" fill="#a1a1aa" text-anchor="end">Sp</text>
+    <text x="0" y="10" font-family="monospace" font-size="42" font-weight="bold" fill="#34d399" text-anchor="middle">e</text>
+    <text x="70" y="10" font-family="monospace" font-size="42" fill="#a1a1aa" text-anchor="start">ed</text>
+  </g>
+  
+  <!-- Speed indicator -->
+  <rect x="480" y="490" width="240" height="40" rx="20" fill="none" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+  <text x="600" y="516" font-family="monospace" font-size="18" fill="#34d399" text-anchor="middle">350 WPM</text>
+  
+  <!-- Tech badges -->
+  <g transform="translate(600, 570)">
+    <rect x="-180" y="-12" width="70" height="24" rx="4" fill="#3178c6" opacity="0.3"/>
+    <text x="-145" y="5" font-family="system-ui" font-size="12" fill="#ffffff" text-anchor="middle">TypeScript</text>
+    
+    <rect x="-100" y="-12" width="50" height="24" rx="4" fill="#61dafb" opacity="0.3"/>
+    <text x="-75" y="5" font-family="system-ui" font-size="12" fill="#ffffff" text-anchor="middle">React</text>
+    
+    <rect x="-40" y="-12" width="50" height="24" rx="4" fill="#646cff" opacity="0.3"/>
+    <text x="-15" y="5" font-family="system-ui" font-size="12" fill="#ffffff" text-anchor="middle">Vite</text>
+    
+    <rect x="20" y="-12" width="90" height="24" rx="4" fill="#06b6d4" opacity="0.3"/>
+    <text x="65" y="5" font-family="system-ui" font-size="12" fill="#ffffff" text-anchor="middle">Tailwind</text>
+  </g>
+</svg>

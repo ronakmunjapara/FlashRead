@@ -1,31 +1,84 @@
-# FlashRead — ORP Speed Reader
+# 🚀 FlashRead
 
-**SpeedReader - Read faster with RSVP technology — no eye movement needed**
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ronakmunjapara/FlashRead/main/public/banner.svg" alt="FlashRead Banner" width="100%"/>
+</p>
 
-A speed reading application that uses Optimal Recognition Point (ORP) technology to help users read faster by displaying one word at a time with the middle character aligned on a vertical center line.
+<p align="center">
+  <strong>SpeedReader — Read faster with RSVP technology</strong>
+</p>
 
-## What is RSVP Speed Reading?
+<p align="center">
+  <a href="https://github.com/ronakmunjapara/FlashRead/stargazers">
+    <img src="https://img.shields.io/github/stars/ronakmunjapara/FlashRead?style=flat&logo=github" alt="Stars"/>
+  </a>
+  <a href="https://github.com/ronakmunjapara/FlashRead/releases">
+    <img src="https://img.shields.io/github/v/release/ronakmunjapara/FlashRead?include_prereleases&style=flat" alt="Version"/>
+  </a>
+  <a href="https://github.com/ronakmunjapara/FlashRead/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ronakmunjapara/FlashRead?style=flat" alt="License"/>
+  </a>
+  <a href="https://github.com/ronakmunjapara/FlashRead/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/ronakmunjapara/FlashRead/ci.yml?style=flat" alt="Build"/>
+  </a>
+</p>
 
-RSVP (Rapid Serial Visual Presentation) is a technique that displays words one at a time in a fixed position, eliminating the need for eye movement across the page. By keeping the optimal recognition point (ORP) aligned on a center line, your eyes stay focused on the most important part of each word, allowing for significantly faster reading speeds (300-1200+ WPM) without comprehension loss.
+---
 
-## Features
+## ✨ What is FlashRead?
 
-- **ORP-Based Reading**: Words are displayed with the optimal recognition point highlighted on a fixed vertical center line, reducing eye movement
-- **Adjustable Speed**: Control reading speed from 300 to 1200+ WPM
-- **Smart Pausing**: Automatically adds pauses for commas, semicolons, and sentence endings
-- **URL Import**: Load articles directly from web pages via a CORS-friendly proxy
-- **Keyboard Controls**: Space to play/pause, arrow keys to step through words, R to restart
-- **Customizable Font Size**: Adjust text size from 28px to 92px
+FlashRead is a speed reading application that uses **RSVP (Rapid Serial Visual Presentation)** technology with **ORP (Optimal Recognition Point)** alignment. It displays words one at a time with the middle character highlighted on a fixed vertical center line, eliminating eye movement and enabling reading speeds of 300-1200+ WPM.
 
-## Tech Stack
+> 💡 **RSVP** technology allows you to read faster by presenting words sequentially in a fixed position, removing the time your eyes spend searching for the next word.
 
-- **React 19** with TypeScript
-- **Vite** for fast development and building
-- **Tailwind CSS 4** for styling
-- **Framer Motion** for animations
-- **Lucide React** for icons
+---
 
-## Getting Started
+## 🎯 Features
+
+| Feature | Description |
+|---------|-------------|
+| ⚡ **RSVP Speed Reading** | Words flash one at a time at your chosen speed |
+| 🎯 **ORP Alignment** | Optimal recognition point highlighted on center line |
+| 🚀 **300-1200+ WPM** | Adjustable reading speed with smart timing |
+| ⏸️ **Smart Pausing** | Automatic pauses for commas, periods, and sentence endings |
+| 🔗 **URL Import** | Load articles directly from any webpage |
+| ⌨️ **Keyboard Controls** | Space, arrows, and R for full control |
+| 📝 **Customizable** | Adjustable font size (28-92px) |
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `Space` | Play / Pause |
+| `→` | Next word |
+| `←` | Previous word |
+| `R` | Restart from beginning |
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=flat&logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat&logo=tailwind-css)
+
+</div>
+
+- **React 19** — UI Framework
+- **TypeScript** — Type safety
+- **Vite** — Fast build tool
+- **Tailwind CSS 4** — Styling
+- **Framer Motion** — Animations
+- **Lucide React** — Icons
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -35,6 +88,12 @@ RSVP (Rapid Serial Visual Presentation) is a technique that displays words one a
 ### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/ronakmunjapara/FlashRead.git
+
+# Navigate to the project
+cd FlashRead
+
 # Install dependencies
 npm install
 ```
@@ -42,14 +101,12 @@ npm install
 ### Development
 
 ```bash
-# Start development server
 npm run dev
 ```
 
 ### Build
 
 ```bash
-# Build for production
 npm run build
 ```
 
@@ -59,43 +116,109 @@ npm run build
 npm run preview
 ```
 
-## How It Works
+---
 
-1. **Text Input**: Paste text directly or import from a URL
-2. **Tokenization**: Text is split into individual words/tokens
-3. **ORP Calculation**: Each word's optimal recognition point is calculated based on word length
-4. **Display**: Words are flashed one at a time with the ORP character highlighted on the center line
-5. **Timing**: Reading speed is adjusted with smart pauses for punctuation
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-src/
-├── components/
-│   ├── ControlsPanel.tsx    # Input controls, WPM slider, URL loader
-│   └── Reader.tsx           # Word display with ORP highlighting
-├── lib/
-│   ├── text.ts              # Text processing, tokenization, ORP logic
-│   └── fetchArticle.ts      # URL content fetching via proxy
-├── App.tsx                  # Main application component
-├── main.tsx                 # Entry point
-└── index.css               # Global styles
+FlashRead/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   ├── ControlsPanel.tsx    # Input controls, WPM slider, URL loader
+│   │   └── Reader.tsx           # Word display with ORP highlighting
+│   ├── lib/
+│   │   ├── text.ts              # Text processing, tokenization, ORP logic
+│   │   └── fetchArticle.ts      # URL content fetching via proxy
+│   ├── App.tsx                  # Main application component
+│   ├── main.tsx                 # Entry point
+│   └── index.css               # Global styles
+├── index.html                   # HTML template with SEO metadata
+├── package.json                 # Dependencies
+├── vite.config.ts              # Vite configuration
+└── tsconfig.json               # TypeScript configuration
 ```
-
-## Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
-| Space | Play/Pause |
-| → | Next word |
-| ← | Previous word |
-| R | Restart from beginning |
-
-## Credits
-
-- Built with inspiration from Spritz's RSVP (Rapid Serial Visual Presentation) technology
-- ORP algorithm based on research in optimal recognition points
 
 ---
 
-**Contributors**: @ronakmunjapara
+## 🔬 How It Works
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     FlashRead Flow                         │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   ┌─────────┐    ┌─────────────┐    ┌─────────────────┐   │
+│   │  Text   │───▶│ Tokenization │───▶│  ORP Calculation│   │
+│   │  Input  │    │              │    │                 │   │
+│   └─────────┘    └─────────────┘    └────────┬────────┘   │
+│                                              │              │
+│   ┌──────────────────────────────────────────┴──────────┐  │
+│   │                                                   ▼  │
+│   │   ┌──────────────────────────────────────────────┐   │
+│   │   │           Word Display (RSVP)                │   │
+│   │   │                                               │   │
+│   │   │      [left] [ORP] [right]                    │   │
+│   │   │         ◄─────►                              │   │
+│   │   │       fixed center line                      │   │
+│   │   └──────────────────────────────────────────────┘   │
+│   │                                                   │   │
+│   └──────────────────────────────────────────────────┬───┘
+│                                                      │
+│                      ┌──────────────┐               │
+│                      │  Timing      │◀──────────────┘
+                      │  (WPM based)  │
+                      └──────────────┘
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### ORP Algorithm
+
+The Optimal Recognition Point (ORP) is calculated based on word length:
+
+| Word Length | ORP Position |
+|-------------|--------------|
+| 1-5 chars   | Position 1  |
+| 6-9 chars   | Position 2  |
+| 10-13 chars | Position 3  |
+| 14+ chars   | Position 4  |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Inspired by [Spritz](https://www.spritzinc.com/) RSVP technology
+- ORP algorithm based on research in visual recognition points
+- Built with the amazing [Vite](https://vitejs.dev/) ecosystem
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/ronakmunjapara">@ronakmunjapara</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ronakmunjapara/FlashRead">
+    <img src="https://img.shields.io/github/followers/ronakmunjapara?style=social" alt="Follow"/>
+  </a>
+</p>
